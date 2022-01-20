@@ -18,7 +18,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Coingo!</a>
         </h1>
 
-        <AuthCoinbase href/>
+        <AuthCoinbase />
       </main>
 
       <footer className={styles.footer}>

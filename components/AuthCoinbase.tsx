@@ -1,20 +1,21 @@
-import React from 'react'
-import styles from '../styles/Home.module.css'
-import { useRouter } from 'next/router'
+import { useSession, signIn, signOut } from "next-auth/react"
 
-export const AuthCoinbase = ({ href: string }) => {
-    const router = useRouter()
+export const AuthCoinbase = () => {
+  const { data: session } = useSession()
 
-    const AuthUser = (e: any) => {
-        e.preventDefault()
-        router.push("http://127.0.0.1:8000/api/login?code=auth")
-    }
-
+  console.log(session)
+  if (session) {
     return (
-        <a href="http://127.0.0.1:8000/api/login?code=auth" onClick={AuthUser} className="btn btn-blue m-5">
-            <p className={styles.code}>
-                Login with Coinbase
-            </p>
-        </a> 
+      <>
+        Signed in as {session.user.email} <br />
+        <button onClick={() => signOut()}>Sign out</button>
+      </>
     )
+  }
+  return (
+    <>
+      Not signed in <br />
+      <button onClick={() => signIn()}>Sign in</button>
+    </>
+  )
 }
