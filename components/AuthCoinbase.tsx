@@ -8,14 +8,14 @@ export const AuthCoinbase = () => {
     return (
       <>
         Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        <button className="btn btn-warning" onClick={() => signOut()}>Sign out</button>
       </>
     )
   }
   return (
     <>
       Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+      <button className="btn btn-primary" onClick={() => signIn('coinbase', {callbackUrl: 'http://localhost:3000/dashboard'})}>Sign in with Coinbase</button>
     </>
   )
 }

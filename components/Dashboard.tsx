@@ -1,6 +1,7 @@
 import React from 'react';
+import { Navbar } from './Navbar';
 
-export const Dashboard = ({ userdata } : { userdata: Object}) => {
+export const InvoiceDashboard = () => {
   return (
     <div>
       dashboard
