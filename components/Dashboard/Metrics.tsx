@@ -25,7 +25,7 @@ export const DashboardMetrics = () => {
                 </div>
             </div>
             <div className='p-4 bg-amber-300 text-center text-amber-700'>
-                Last paid 4 days ago
+                1 open invoice
             </div>
         </div> 
 
@@ -37,7 +37,7 @@ export const DashboardMetrics = () => {
                 </div>
             </div>
             <div className='p-4 bg-slate-300 text-center text-slate-700'>
-                Last paid 4 days ago
+                Yay! No overdues
             </div>
         </div> 
 
