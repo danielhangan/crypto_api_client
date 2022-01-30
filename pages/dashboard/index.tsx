@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar } from '../../components/Navbar';
-import { InvoiceDashboard } from '../../components/Dashboard';
 import { useSession } from 'next-auth/react';
 import { AuthCoinbase } from '../../components/AuthCoinbase';
+import { DashboardUI } from '../../components/Dashboard/Main';
 
 
 export default function Dashboard ({ userdata: object }) {
@@ -16,7 +16,7 @@ export default function Dashboard ({ userdata: object }) {
         </div>
 
         <div className='flex-auto w-4/5'>
-          <InvoiceDashboard />
+          <DashboardUI />
         </div>
       </div>
     )

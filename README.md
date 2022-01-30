@@ -6,10 +6,10 @@
 - [x] Authentification with Coinbase
 - [x] Check if user already exists. If no register to database
 - [x] Navbar
-- [ ] Dashboard
+- [x] Dashboard
 - [ ] Invoice Generator [Edit, Save, Send]
 - [ ] History
- - [ ] Pending, Paid and Due queries
+- [ ] Pending, Paid and Due queries
 - [ ] Projects
 - [ ] Clients
 - [ ] Settings
