@@ -7,7 +7,11 @@
 - [x] Check if user already exists. If no register to database
 - [x] Navbar
 - [x] Dashboard
+- [ ] Clients Dashboard
 - [ ] Invoice Generator [Edit, Save, Send]
+
+## Connect the backend and then
+
 - [ ] History
 - [ ] Pending, Paid and Due queries
 - [ ] Projects

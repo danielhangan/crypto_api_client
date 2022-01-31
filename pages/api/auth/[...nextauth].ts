@@ -9,7 +9,6 @@ export default NextAuth({
     CoinbaseProvider({
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-    })
-    // ...add msore providers here
+    }),
   ],
 })
